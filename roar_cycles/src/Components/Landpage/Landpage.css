@@ -1,0 +1,21 @@
+body {
+    width: 100vw;
+    height: auto;
+    background-image: url('./../Images/bike_landpage.png');
+    background-position: top;
+}
+
+.header_container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile_and_cart  {
+    width: 15rem;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
