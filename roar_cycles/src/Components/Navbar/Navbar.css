@@ -1,7 +1,13 @@
-.nav_button {
-    font-family: Haettenschweiler;
-    background-color: transparent;
-    font-size: 30px;
-    
+.nav_container {
+    display: flex;
+
 }
 
+/* Media Queries */
+
+@media only screen and (max-width: 720px) {
+    .nav_container {
+        margin: 0;
+        
+    }
+}

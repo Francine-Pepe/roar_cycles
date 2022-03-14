@@ -1,0 +1,163 @@
+@import url(//db.onlinewebfonts.com/c/97d6f29a4bda3a872dad26cc5b2d0d7b?family=Haettenschweiler);
+
+body {
+    width: 100vw;
+    height: auto;
+}
+
+.carousel_component_container {
+    width: 100vw;
+    height: auto;
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 30%; */
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.name_box {
+    width: 12vw;
+    height: 9vh;
+    font-family: 'filicudi-color-pride',sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size: 2.5rem;
+    z-index: 2;
+    margin-top: 0.5rem;
+}
+
+/* .carousel_item img {
+    z-index: -2;
+    position: relative;
+} */
+
+.bike_carousel {
+    width: 80vw;
+    height: auto;
+    border: 5px solid #F29F05;
+    padding-left: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#carousel_button {
+    width: 12vw;
+    height: auto;
+    /* padding: 0.5rem; */
+    background-color: white;
+    border: 5px solid #A61414;
+    
+}
+.carousel_caption  > div {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel_caption p,
+.bike_information p {
+    font-family: Haettenschweiler;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.description_box {
+    width: 50vw;
+    height: auto;
+    background-color: white;
+    opacity: 0.5;
+    z-index: -1;
+    margin-top: 2rem;
+
+}
+.description_box > div {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel_image {
+    width: 75vw;
+    height: auto;
+    display: flex;
+    
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 799px) {
+    #carousel_button {
+        width: 19vw;
+    }
+    .carousel_caption p {
+        font-family: Haettenschweiler;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 706px) {
+    #carousel_button {
+        width: 18vw;
+    }
+    .description_box p {
+        display: none;
+    }
+    .name_box {
+        width: 12vw;
+        height: 9vh;
+        font-size: 2rem;
+        z-index: 2;
+        /* margin-top: 1rem; */
+    }
+   
+}
+@media only screen and (max-width: 665px) {
+    #carousel_button {
+        width: 20vw;
+    }
+    .name_box {
+        width: 12vw;
+        height: 9vh;
+        font-size: 1.5rem;
+        z-index: 2;
+        /* margin-top: 1rem; */
+    }
+    #carousel_image {
+        width: 60vw;
+        height: auto;
+        display: flex;
+    }
+    .bike_carousel {
+        width: 80vw;
+        height: auto;
+        border: 5px solid #F29F05;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bike_information {
+        max-width: 80vw;
+        height: auto;
+    }
+
+    .bike_information p {
+        font-size: 1.6rem;
+    }
+}
+  
+

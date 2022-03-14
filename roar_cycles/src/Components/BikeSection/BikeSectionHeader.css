@@ -1,0 +1,19 @@
+body {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-image: url('./../Images/bike_section_header.png');
+    width: 100%;
+    height: 27rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bike_header {
+    width: 100%;
+    height: 27rem;
+    background-color: white;
+    opacity: ;
+}
