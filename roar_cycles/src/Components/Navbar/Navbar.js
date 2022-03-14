@@ -1,11 +1,13 @@
-import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import './Navbar.css';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { Link, List } from '@mui/material';
+import * as React from "react";
+import { styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import "./Navbar.css";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import json2mq from 'json2mq';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -21,35 +23,34 @@ const StyledMenu = styled((props) => (
     {...props}
   />
 ))(({ theme }) => ({
-  '& .MuiPaper-root': {
+  "& .MuiPaper-root": {
     borderRadius: 6,
     marginTop: theme.spacing(1),
     minWidth: 180,
     color:
-      theme.palette.mode === 'light' ? 'rgb(55, 65, 81)' : theme.palette.grey[300],
+      theme.palette.mode === "light"
+        ? "rgb(55, 65, 81)"
+        : theme.palette.grey[300],
     boxShadow:
-      'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
-    '& .MuiMenu-list': {
-      padding: '4px 0',
+      "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+    "& .MuiMenu-list": {
+      padding: "4px 0",
     },
-    '& .MuiMenuItem-root': {
-      '& .MuiSvgIcon-root': {
-        
+    "& .MuiMenuItem-root": {
+      "& .MuiSvgIcon-root": {
         fontSize: 18,
         color: theme.palette.text.secondary,
         marginRight: theme.spacing(1.5),
-        
       },
-      '&:active': {
-        backgroundColor: '#F2B705'
+      "&:active": {
+        backgroundColor: "#F2B705",
       },
-      '&:hover': {
-        backgroundColor: '#F2B705'
+      "&:hover": {
+        backgroundColor: "#F2B705",
       },
-      '& .MuiTypography-root-MuiLink-root': {
-          color: '#F2B705'
-      }
-      
+      "& .MuiTypography-root-MuiLink-root": {
+        color: "#F2B705",
+      },
     },
   },
 }));
@@ -63,53 +64,87 @@ export default function Navbar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const styleButton = {
+    fontFamily: "Haettenschweiler",
+    backgroundColor: "transparent",
+    fontSize: 30,
+    color: "#F2B705",
+    margin: "1rem"
+  }
+  const matches = useMediaQuery(
+    json2mq({
+      maxWidth: 720,
+      margin: '0.5rem'
+    }),
+  );
   
- 
+
   return (
-    <div>
+    <div className="nav_container">
       <Button
-        className='nav_button'
         id="demo-customized-button"
-        aria-controls={open ? 'demo-customized-menu' : undefined}
+        aria-controls={open ? "demo-customized-menu" : undefined}
         aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
+        aria-expanded={open ? "true" : undefined}
         variant="contained"
         disableElevation
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
-        style={{ fontFamily: 'Haettenschweiler', backgroundColor: 'transparent', fontSize: 30, color: '#F2B705', margin:'2rem'}}
-        
+        style={styleButton}
+        useMediaQuery={matches}
       >
         BIKES
       </Button>
       <StyledMenu
         id="demo-customized-menu"
         MenuListProps={{
-            'aria-labelledby': 'demo-customized-button',
+          "aria-labelledby": "demo-customized-button",
         }}
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
+        
       >
-        <MenuItem onClick={handleClose} disableRipple style={{ fontFamily: 'Haettenschweiler' }}>
+        <MenuItem
+          onClick={handleClose}
+          disableRipple
+          style={{ fontFamily: "Haettenschweiler" }}
+        >
           SIAMESE
         </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple style={{ fontFamily: 'Haettenschweiler' }}>
+        <MenuItem
+          onClick={handleClose}
+          disableRipple
+          style={{ fontFamily: "Haettenschweiler" }}
+        >
           SPHYNX
         </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple style={{ fontFamily: 'Haettenschweiler' }}>
+        <MenuItem
+          onClick={handleClose}
+          disableRipple
+          style={{ fontFamily: "Haettenschweiler" }}
+        >
           BENGAL
-        </MenuItem>        
+        </MenuItem>
       </StyledMenu>
-      <Button className='nav_button'
-      style={{ fontFamily: 'Haettenschweiler', backgroundColor: 'transparent', fontSize: 30, color: '#F2B705', margin:'2rem'}}
+      <Button
+        className="nav_button"
+        style={styleButton}
       >
-            GALLERY
+        GALLERY
       </Button>
-      <Button className='nav_button'
-      style={{ fontFamily: 'Haettenschweiler', backgroundColor: 'transparent', fontSize: 30, color: '#F2B705', margin:'2rem'}}
+      <Button
+        className="nav_button"
+        style={styleButton}
       >
-            CONTACT
+        ABOUT 
+      </Button>
+      <Button
+        className="nav_button"
+        style={styleButton}
+      >
+        CONTACT
       </Button>
     </div>
   );

@@ -1,3 +1,6 @@
+@font-face {font-family: "Haettenschweiler"; src: url("//db.onlinewebfonts.com/t/97d6f29a4bda3a872dad26cc5b2d0d7b.eot"); src: url("//db.onlinewebfonts.com/t/97d6f29a4bda3a872dad26cc5b2d0d7b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/97d6f29a4bda3a872dad26cc5b2d0d7b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/97d6f29a4bda3a872dad26cc5b2d0d7b.woff") format("woff"), url("//db.onlinewebfonts.com/t/97d6f29a4bda3a872dad26cc5b2d0d7b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/97d6f29a4bda3a872dad26cc5b2d0d7b.svg#Haettenschweiler") format("svg"); 
+}
+
 body {
   width: 100vw;
   height: auto;

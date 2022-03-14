@@ -1,8 +1,21 @@
+@import url("https://use.typekit.net/mum7ssd.css");
+
 body {
-    width: 100vw;
-    height: auto;
-    background-image: url('./../Images/bike_landpage.png');
+    max-width: 100vw;
+    height: 50%;
+    background-image: url('./../Images/bike_landpage2.png');
     background-position: top;
+    background-repeat: no-repeat;
+    margin-bottom: 20vh;
+    padding: 0.5rem
+}
+
+.mobile_header {
+    display: none;
+}
+
+.mobile_landpage_main_content {
+    display: none;
 }
 
 .header_container {
@@ -18,4 +31,93 @@ body {
     height: auto;
     display: flex;
     justify-content: space-evenly;
+}
+
+.landpage_main_content {
+    display: flex;
+    width: 55vw;
+    height: auto;
+    flex-direction: column;
+    margin-left: 6rem;
+    margin-top: 10rem;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.landpage_main_content p {
+    font-family: 'filicudi-color-pride',sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 2.5rem;
+    
+}
+
+.landpage_main_content a {
+    font-family: Haettenschweiler;
+    color: #F2B705;
+    font-size: 2rem;
+}
+/* Media Queries */
+
+@media only screen and (max-width: 720px) {
+    .header_container{
+        display: none;
+    }
+    
+    .mobile_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+    .top_header {
+        display: flex;
+        align-items: center;
+        
+    }
+    body {
+        max-width: 100vw;
+        height: 100vh;
+        background-image: url('./../Images/bike_landpage_720px2.png');
+        background-repeat: no-repeat;
+        padding: 1rem;
+    }
+    .profile_and_cart  {
+        width: 10rem;
+        height: auto;
+        display: flex;
+        margin-left: 5rem;
+    }
+
+    .mobile_landpage_main_content {
+        display: flex;
+        /* flex-wrap: wrap; */
+        width: 80vw;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3rem;
+        margin-top: 7rem;
+    }
+
+    .mobile_landpage_main_content p {
+        font-family: 'filicudi-color-pride',sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: white;
+        font-size: 2rem;
+        text-align:center;
+    }
+    
+    .mobile_landpage_main_content a {
+        font-family: Haettenschweiler;
+        color: #F2B705;
+        font-size: 2rem;
+    }
+    .landpage_main_content {
+        display: none;
+    }
 }
