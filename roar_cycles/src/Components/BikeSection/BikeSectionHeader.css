@@ -1,19 +1,151 @@
 body {
-    width: 100%;
+    min-width: 100vw;
     height: auto;
+    margin: 0px;
+    padding: 0px;
 }
 
-header {
-    background-image: url('./../Images/bike_section_header.png');
-    width: 100%;
+.header_bigger_screen {
+    max-width: 100vw;
     height: 27rem;
-    background-repeat: no-repeat;
     background-position: center;
+    opacity: 1;
+    background-size: cover;
+    background-image:
+    linear-gradient(to right, rgba(7, 8, 10, 0.62), rgba(255, 255, 255, 0)),
+    url('./../Images/bike_section_header.png');
 }
 
-.bike_header {
+.header_smaller_screen {
+    display: none;
+}
+
+.left_navbar_parent_smaller {
+    display: none;
+}
+
+.left_navbar_parent {
+    display:inline-flex;
+    padding-top: 10rem;
+    /* padding-left: 5rem;  */
+    width: 100vw;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+    overflow:unset;
+}
+
+.left_navbar h1 {
+    font-size: 6rem;
+    color: white;
+    font-family: Haettenschweiler;
+    padding: 2rem;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.left_navbar {
+    min-width: 22vw;
+    height: 43rem;
+    border: 0.5rem solid #F29F05; 
+    position: absolute;
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ul li a {
+    font-size: 2.5rem;
+    color: black;
+    font-family: Haettenschweiler;
+    display: flex;
+    margin-top: 2.8rem;
+    text-decoration: none;
+    align-items: center;
+}
+
+.link_box {
+    width: 100%;
+    height: 5rem;
+}
+
+ul li a:hover {
+    background-color: #F29F05;
+    color: whitesmoke;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 720px) {
+
+.header_bigger_screen {
+    display: none;
+}
+
+.left_navbar_parent_smaller {
+    display: flex;
+    padding-top: 10rem;
+    /* padding-left: 5rem;  */
+    min-width: 40vw;
+    
+}
+
+.left_navbar_smaller {
+    min-width: 22vw;
+    height: 40rem;
+    border: 0.5rem solid #F29F05; 
+}
+
+.left_navbar_smaller h1 {
+    font-size: 6rem;
+    color: white;
+    font-family: Haettenschweiler;
+    padding: 2rem;
+    display: flex;
+    margin-top: 2rem;
+} 
+
+.header_smaller_screen {
     width: 100%;
     height: 27rem;
-    background-color: white;
-    opacity: ;
+    background-position: center;
+    opacity: 1;
+    background-size: cover;
+    background-image:
+    linear-gradient(to right, rgba(7, 8, 10, 0.62), rgba(255, 255, 255, 0)),
+    url('./../Images/bike_section_header_small.png');
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.left_navbar_smaller ul li {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.left_navbar_smaller ul li a {
+    font-size: 2.5rem;
+    color: black;
+    font-family: Haettenschweiler;
+    display: flex;
+    margin-top: 2.8rem;
+    text-decoration: none;
+    align-items: center;
+}
+
+.link_box_smaller {
+    width: 100%;
+    height: 5rem;
+}
+
+.left_navbar_smaller ul li a:hover {
+    background-color: #F29F05;
+    color: whitesmoke;
+} 
+
 }

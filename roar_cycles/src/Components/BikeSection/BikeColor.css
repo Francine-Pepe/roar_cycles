@@ -1,0 +1,60 @@
+.bike_container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    /* margin-top: 1rem; */
+    margin-left: 2rem;
+    justify-content: center;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.bike_information_color {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.bike_information_color p,
+.rim_container p,
+.add_detail_container p {
+    font-size: 1.5rem;
+    font-family: Haettenschweiler;
+    margin-right: 1rem;
+}
+
+.bike_container hr {
+    width: 30rem;
+    border: #F29F05 solid 0.25rem;
+    background-color: #F29F05;
+    opacity: 10;
+}
+
+.bike_container h1 {
+    color: black;
+    font-size: 2rem;
+    font-family: Haettenschweiler;
+}
+
+.name_container {
+    
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    /* margin-left: 5rem; */
+    margin-top: 1rem;
+    max-width: 80vw;
+    
+}
+
+.name_container h1 {
+    text-align: center;
+}
+
+.bike_image_container {
+    display: flex;
+    align-content: flex-end;
+    
+}
