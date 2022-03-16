@@ -1,0 +1,14 @@
+#add_button {
+    width: 8vw;
+    height: auto;
+    padding: 0.5rem;
+    background-color: white;
+    border: 5px solid #A61414;
+}
+
+.add_to_cart_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}

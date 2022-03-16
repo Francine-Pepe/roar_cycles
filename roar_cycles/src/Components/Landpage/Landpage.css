@@ -7,7 +7,7 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     margin-bottom: 20vh;
-    padding: 0.5rem
+    /* padding: 0.5rem */
 }
 
 .mobile_header {
@@ -82,7 +82,7 @@ body {
         height: 100vh;
         background-image: url('./../Images/bike_landpage_720px2.png');
         background-repeat: no-repeat;
-        padding: 1rem;
+        
     }
     .profile_and_cart  {
         width: 10rem;
