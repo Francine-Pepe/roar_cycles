@@ -19,6 +19,7 @@
     "react-medium-image-zoom": "^4.3.5",
     "react-scripts": "5.0.0",
     "react-select": "^5.2.2",
+    "react-simply-carousel": "^5.1.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

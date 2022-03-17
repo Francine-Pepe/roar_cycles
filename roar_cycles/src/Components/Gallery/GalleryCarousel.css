@@ -1,0 +1,28 @@
+.client_comment {
+    display: flex;
+    height: 15vh;
+   
+}
+
+.carousel_box {
+    width: 70vw;
+    height: auto;
+    border: solid white 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#client_image {
+    border: none; 
+}
+
+.carousel_box hr {
+    width: 100vw;
+    border: #F29F05 solid 0.25rem;
+    background-color: #F29F05;
+    opacity: 10;
+    align-self: center;
+}

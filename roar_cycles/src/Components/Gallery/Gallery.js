@@ -1,5 +1,7 @@
 import React from 'react';
 import './Gallery.css';
+import GalleryCarousel from './GalleryCarousel';
+import './GalleryCarousel.css'
 
 export default function Gallery() {
     return (
@@ -15,7 +17,7 @@ export default function Gallery() {
                 </p>
             </div>
             <div className='gallery_content_right'>
-
+                <GalleryCarousel />
             </div>
         </div>
         
@@ -27,3 +29,4 @@ export default function Gallery() {
 
     );
 }
+
