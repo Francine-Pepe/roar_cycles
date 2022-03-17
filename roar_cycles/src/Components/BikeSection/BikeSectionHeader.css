@@ -27,12 +27,11 @@ body {
 .left_navbar_parent {
     display:inline-flex;
     padding-top: 10rem;
-    /* padding-left: 5rem;  */
     width: 100vw;
     justify-content: flex-start;
     position: relative;
     z-index: 2;
-    overflow:unset;
+    
 }
 
 .left_navbar h1 {

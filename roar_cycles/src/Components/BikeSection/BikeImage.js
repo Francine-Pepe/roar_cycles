@@ -17,10 +17,11 @@ export default function BikeIimage() {
   return (
     <ControlledZoom isZoomed={isZoomed} onZoomChange={handleZoomChange}>
       <img
+        className='bike_image'
         alt="Siamese Bike"
         onLoad={handleImgLoad}
         src={SiameseZoom}
-        width="500"
+        // width="30vw"
       />
     </ControlledZoom>
   );

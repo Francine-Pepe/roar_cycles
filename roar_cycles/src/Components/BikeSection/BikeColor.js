@@ -15,13 +15,7 @@ export default function BikeColor() {
     { color: "#F2F2F2" },
     { color: "#FFFFFF" },
     { color: "#A61414" },
-    // { color: "#D82E2F" },
-    // { color: "#EB4D4B" },
-    // { color: "#EF5354" },
-    // { color: "#B4161B" },
-    // { color: "#E6425E" },
-    // { color: "#E83A59" },
-    // { color: "#B9345A" },
+    
   ];
 
   const nameList = [
@@ -47,14 +41,14 @@ export default function BikeColor() {
       
         <div className="bike_information_color">
           <p>COLORS:</p>
-          <Stack direction="row" spacing={2}>
+          <Stack direction="row" spacing={1}>
             {colorList.map((data, index) => (
               <Button
                 variant="contained"
                 key={index}
                 style={{
-                  width: "2rem",
-                  height: "3rem",
+                  width: "2vw",
+                  height: "6vh",
                   backgroundColor: `${data.color}`,
                 }}
               ></Button>
@@ -68,9 +62,10 @@ export default function BikeColor() {
       </div>
       <div className="bike_image_container">
         <BikeImage />
-    </div>
-    </div>
+      </div>
+      </div>
     
     </>
   );
 }
+

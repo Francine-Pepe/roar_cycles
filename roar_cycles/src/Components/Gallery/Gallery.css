@@ -1,0 +1,67 @@
+body {
+    font-size: 100%;
+}
+
+.gallery_container {
+    width: 100vw;
+    height: auto;
+    
+}
+
+.gallery_header {
+    width: 100vw;
+    height: 27rem;
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    background-image:
+    linear-gradient(to right, rgba(7, 8, 10, 0.62), rgba(255, 255, 255, 0)),
+    url('./../Images/gallery_section_header.png');
+}
+
+.gallery_content {
+    width: 100vw;
+    display: flex;
+}
+
+.gallery_content p {
+    font-size: 1.5rem;
+    font-family: Haettenschweiler;
+    padding: 2rem;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.gallery_content h1 {
+    font-size: 6em;
+    color: white;
+    font-family: Haettenschweiler;
+    padding: 2rem;
+    display: flex;
+    margin-top: 2rem;
+
+}
+
+.gallery_container_left {
+    max-width: 30vw;
+    /* height: 70vh; */
+    border: 0.5rem solid #F29F05;
+    z-index: 1;
+    margin-top: -15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.gallery_title {
+    min-width:fit-content;
+}
+
+.gallery_content_right {
+    width: 100vw;
+    height: 30vh;
+    background-image: url(./../Images/Bengal.png);
+    border: 0.5rem solid #F29F05;
+    display: flex;
+    
+}
