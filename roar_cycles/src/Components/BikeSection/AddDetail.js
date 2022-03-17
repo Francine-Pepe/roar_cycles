@@ -9,7 +9,7 @@ export default function AddDetail() {
         <TextareaAutosize
         aria-label="empty textarea"
         // placeholder="Add here the details you want"
-        style={{ width: 350, height: 50, fontFamily: 'Haettenschweiler' }}
+        style={{ width: '20vw', height: 50, fontFamily: 'Haettenschweiler' }}
         />
     </div>
     </>

@@ -5,15 +5,13 @@
     align-items: center;
     /* flex-direction: column; */
     /* margin-top: 1rem; */
-    margin-left: 2rem;
-    justify-content: center;
+    padding-right: 4rem;
+    justify-content: flex-end;
     gap: 40px;
-    overflow: hidden;
 }
 
 .bike_information_color {
     display: flex;
-    justify-content: center;
     margin-top: 1rem;
 }
 
@@ -23,10 +21,11 @@
     font-size: 1.5rem;
     font-family: Haettenschweiler;
     margin-right: 1rem;
+    
 }
 
 .bike_container hr {
-    width: 30rem;
+    width: 32vw;
     border: #F29F05 solid 0.25rem;
     background-color: #F29F05;
     opacity: 10;
@@ -39,7 +38,6 @@
 }
 
 .name_container {
-    
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
@@ -58,3 +56,8 @@
     align-content: flex-end;
     
 }
+/* 
+.button_color {
+    width: 20%;
+    height: 20%;
+} */

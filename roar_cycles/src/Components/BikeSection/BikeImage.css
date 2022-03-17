@@ -48,3 +48,12 @@
   transition-property: transform;
   transform-origin: center center;
 }
+
+.bike_image {
+    width: 30vw;
+    margin-top: 2rem;
+}
+
+
+/* BikeColor CSS */
+

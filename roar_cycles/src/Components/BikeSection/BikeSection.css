@@ -1,3 +1,14 @@
+.bike_section_container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+}
+
+.bike_section_header {
+    width: 40vw;
+    display: flex;
+    justify-content: flex-start;
+}
 .bike_information {
     width: 100vw;
     display: flex;

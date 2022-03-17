@@ -16,7 +16,7 @@ export default function BikeRim() {
     <>
       <div
         className="rim_container"
-        style={{ width: "20rem", marginTop: '2rem', display: 'flex' }}
+        style={{ width: "20vw", marginTop: '2rem', display: 'flex' }}
       >
         <p>RIM SIZE:</p>
         <Box sx={{ minWidth: 120 }}>
