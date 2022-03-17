@@ -6,6 +6,7 @@ import BikeSectionHeader from './Components/BikeSection/BikeSectionHeader';
 import BikeColor from './Components/BikeSection/BikeColor';
 import BikeRim from './Components/BikeSection/BikeRim';
 import Gallery from './Components/Gallery/Gallery';
+import GalleryCarousel from './Components/Gallery/GalleryCarousel';
 // import NavbarHamburger from './Components/Navbar/NavbarHamburger';
 
 function App() {
@@ -14,10 +15,11 @@ function App() {
       {/* <Landpage /> */}
       {/* <NavbarHamburger /> */}
       {/* <BikeCarousel /> */}
-      {/* <BikeSectionHeader /> */}
+      <BikeSectionHeader />
       {/* <BikeSection /> */}
-      {/* <BikeColor /> */}
+      <BikeColor />
       <Gallery />
+      {/* <GalleryCarousel /> */}
     </div>
   );
 }
