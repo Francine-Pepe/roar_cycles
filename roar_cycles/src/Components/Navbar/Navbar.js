@@ -6,7 +6,8 @@ import MenuItem from "@mui/material/MenuItem";
 import "./Navbar.css";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import json2mq from 'json2mq';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import useMediaQuery from '@mui/material/useMediaQuery'
+
 
 
 const StyledMenu = styled((props) => (

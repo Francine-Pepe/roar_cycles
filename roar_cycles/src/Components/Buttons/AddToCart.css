@@ -4,11 +4,12 @@
     padding: 0.5rem;
     background-color: white;
     border: 5px solid #A61414;
+    border-radius: 0;
 }
 
 .add_to_cart_container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 2rem;
     
 }

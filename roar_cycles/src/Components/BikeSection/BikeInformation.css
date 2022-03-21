@@ -1,0 +1,6 @@
+.bike_information_container {
+    width: 78vw;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
