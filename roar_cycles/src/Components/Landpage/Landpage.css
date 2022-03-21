@@ -1,13 +1,22 @@
 @import url("https://use.typekit.net/mum7ssd.css");
 
 body {
+    width: 100vw;
+    height: auto;
+}
+
+/* .landpage_wrapper_mobile {
+    display: none;
+} */
+
+.landpage_wrapper {
     max-width: 100vw;
-    height: 50%;
+    height: 100vh;
     background-image: url('./../Images/bike_landpage2.png');
     background-position: top;
     background-repeat: no-repeat;
-    margin-bottom: 20vh;
-    /* padding: 0.5rem */
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile_header {
@@ -50,7 +59,7 @@ body {
     font-weight: 700;
     font-style: normal;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     
 }
 
@@ -77,12 +86,16 @@ body {
         align-items: center;
         
     }
-    body {
+
+    .landpage_wrapper {
+        display: none;
+    }
+    
+    .landpage_wrapper_mobile {
         max-width: 100vw;
         height: 100vh;
         background-image: url('./../Images/bike_landpage_720px2.png');
         background-repeat: no-repeat;
-        
     }
     .profile_and_cart  {
         width: 10rem;

@@ -16,7 +16,7 @@ export default function BikeRim() {
     <>
       <div
         className="rim_container"
-        style={{ width: "20vw", marginTop: '2rem', display: 'flex' }}
+        style={{ width: "50vw", marginTop: '2rem', display: 'flex' }}
       >
         <p>RIM SIZE:</p>
         <Box sx={{ minWidth: 120 }}>
@@ -39,6 +39,7 @@ export default function BikeRim() {
               value={size}
               label="Size"
               onChange={handleChange}
+              style={{ width: '20vw', height: 50, fontFamily: 'Haettenschweiler' }}
             >
               <MenuItem value={24}>24"</MenuItem>
               <MenuItem value={26}>26"</MenuItem>

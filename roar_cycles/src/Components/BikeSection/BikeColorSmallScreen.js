@@ -1,6 +1,6 @@
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import "./BikeColor.css";
+import "./BikeColorSmallScreen.css";
 import BikeRim from "./BikeRim";
 import AddDetail from "./AddDetail";
 import AddToCart from "../Buttons/AddToCart";
@@ -8,7 +8,7 @@ import BikeImage from "./BikeImage";
 import { makeStyles, useTheme, useMediaQuery, Box } from '@material-ui/core';
 
 
-export default function BikeColor() {
+export default function BikeColorSmallScreen() {
 
   const colorList = [
     { color: "#000000" },
@@ -33,9 +33,9 @@ export default function BikeColor() {
 
   return (
     <>
-    <div className="bike_container">
-      <div className="bike_wrapper">
-        <Box className="name_container"  
+    <div className="mobile_bike_container">
+      <div className="mobile_bike_wrapper">
+        <Box className="mobile_name_container"  
         sx={{
               width: {
                 xs: 100, // theme.breakpoints.up('xs')
@@ -48,7 +48,7 @@ export default function BikeColor() {
           <h1>SIAMESE BIKE</h1>
           <hr />
         
-          <div className="bike_information_color">
+          <div className="mobile_bike_information_color">
             <p>COLORS:</p>
             <Stack direction="row" spacing={1} >
             
@@ -71,7 +71,7 @@ export default function BikeColor() {
           <AddDetail />
           <AddToCart />
         </Box>
-        <div className="bike_image_container">
+        <div className="mobile_bike_image_container">
           <BikeImage />
         </div>
       </div>

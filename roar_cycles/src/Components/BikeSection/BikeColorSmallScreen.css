@@ -4,7 +4,7 @@ body {
     height: auto;
 }
 
-.bike_container  {
+.mobile_bike_container  {
     width: 100vw;
     height: auto;
     /* display: flex; */
@@ -16,19 +16,19 @@ body {
     /* gap: 40px; */
 }
 
-.bike_wrapper {
+.mobile_bike_wrapper {
     display: flex;
-    max-width: 70vw;
-    justify-content: space-between;
+    max-width: 100vw;
+    flex-direction: column;
 }
 
-.bike_information_color {
+.mobile_bike_information_color {
     display: flex;
     margin-top: 1rem;
     width: fit-content;
 }
 
-.bike_information_color p,
+.mobile_bike_information_color p,
 .rim_container p,
 .add_detail_container p {
     font-size: 1.5rem;
@@ -37,21 +37,21 @@ body {
     
 }
 
-.bike_container hr {
-    width: 30vw;
+.mobile_bike_container hr {
+    width: 60vw;
     border: #F29F05 solid 0.25rem;
     background-color: #F29F05;
     opacity: 1;
     
 }
 
-.bike_container h1 {
+.mobile_bike_container h1 {
     color: black;
     font-size: 2rem;
     font-family: Haettenschweiler;
 }
 
-.name_container {
+.mobile_name_container {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 5rem;
@@ -60,7 +60,7 @@ body {
     
 }
 
-.name_container h1 {
+.mobile_name_container h1 {
     text-align: left;
 }
 
@@ -76,10 +76,15 @@ body {
     
 }
 
+.mobile_bike_image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Media Queries */
-
+/* 
 @media only screen and (max-width: 1000px) {
-    .bike_wrapper {
+    .mobile_bike_wrapper {
         display: flex;
         width: 70vw;
         flex-direction: column;
@@ -91,4 +96,4 @@ body {
         display: flex;
         flex-direction: column;
     }
-}
+} */
